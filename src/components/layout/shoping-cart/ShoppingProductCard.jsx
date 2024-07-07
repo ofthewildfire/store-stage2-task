@@ -1,17 +1,19 @@
-const ShoppingProductCard = () => {
+const ShoppingProductCard = (props) => {
   return (
     <div className="flex items-center justify-between gap-5 p-5 bg-white drop-shadow-lg">
       <div className="flex items-center justify-between gap-2">
-        <img src="redpot.png" alt="Red pot" width={137} height={105} />
+        <img src={props.data.img} alt="Red pot" width={137} height={105} />
         <div className="text">
-          <h4 className="text-[#1E1E1E] font-semibold">Ceramic Set</h4>
+          <h4 className="text-[#1E1E1E] font-semibold">{props.data.title}</h4>
           <p className="text-[#383838] text-[.75rem] font-medium">
-            Recycled Ceramic made with natural benzonite clay
+            {props.data.desc}
           </p>
         </div>
       </div>
-      <div>
-        <h4 className="text-[#1E1E1E] font-bold text-[1.5rem]">₦ 129,999.99</h4>
+      <div className="grid gap-3">
+        <h4 className="text-[#1E1E1E] font-bold text-[1.5rem]">
+          {props.data.price}
+        </h4>
         <div className="control flex items-center gap-2">
           <span className="text-[#969696] text-[.875rem]">Quantity</span>
           <span className="bg-[#3A83A1] text-white h-[1.875rem] w-[1.875rem] flex items-center justify-center">

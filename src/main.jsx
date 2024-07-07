@@ -6,6 +6,7 @@ import "@fontsource-variable/montserrat";
 import "./index.css";
 import ProductList from "./components/layout/productpage/ProductList.jsx";
 import ShoppingCart from "./components/layout/shoping-cart/ShoppingCart.jsx";
+import CheckoutPage from "./components/layout/shoping-cart/CheckoutPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,8 @@ const router = createBrowserRouter([
     path: "/cart",
     element: <ShoppingCart />,
   },
+
+  { path: "/checkout", element: <CheckoutPage /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
