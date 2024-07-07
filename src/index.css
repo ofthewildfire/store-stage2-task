@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background: #0cbc8b;
+  background: #ffffff;
+  background: #292a2e;
+  background: #3a83a1;
+  background: #0c0c0c;
+  background: #5b5b5b;
+  background: #e98862;
+  background: #969696;
+  background: #f4f4f4;
+  background: #0a0a0a;
+  background: #1e1e1e;
+  background: #262626;
+}
+
+body {
+  body {
+    font-family: "Montserrat Variable", sans-serif;
+    overflow: hidden;
+  }
+}
+
+.blog-card {
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 0.625rem;
+  padding: 0.5em;
+  align-items: center;
+}
+
+.blog-card:first-of-type {
+  position: relative;
+  right: -10rem;
+}
+
+.blog-card:last-of-type {
+  position: relative;
+  right: -12.5rem;
+}
+
+/* 
+background: #0CBC8B;
+background: #FFFFFF;
+background: #292A2E;
+background: #3A83A1;
+background: #0C0C0C;
+background: #5B5B5B;
+background: #E98862;
+background: #969696;
+background: #F4F4F4;
+background: #0A0A0A;
+background: #1E1E1E;
+background: #262626;
+background: linear-gradient(354.01deg, rgba(255, 255, 255, 0.55) 1.11%, rgba(150, 150, 150, 0.55) 22.01%, rgba(56, 56, 56, 0.55) 46.6%);
+
+
+*/
