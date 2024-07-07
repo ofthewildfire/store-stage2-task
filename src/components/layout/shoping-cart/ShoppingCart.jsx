@@ -1,5 +1,6 @@
 import Header from "../Header";
 import Footer from "../Footer";
+import ShoppingProductCard from "./ShoppingProductCard";
 
 const ShoppingCart = () => {
   return (
@@ -7,6 +8,7 @@ const ShoppingCart = () => {
       <Header />
       <main>
         <h2>Shopping Cart(2)</h2>
+        <ShoppingProductCard />
       </main>
       <Footer />
     </>
