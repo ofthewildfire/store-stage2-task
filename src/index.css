@@ -55,6 +55,19 @@ main {
   grid-column: 3 / -1;
 }
 
+.shopping-cart > h2 {
+  grid-column: 1/-1;
+}
+
+.shopping-cart > .cart {
+  grid-column: 1/4;
+}
+
+.shopping-cart > .panel {
+  border: 5px solid maroon;
+  grid-column: 4/-1;
+}
+
 /* 
 background: #0CBC8B;
 background: #FFFFFF;

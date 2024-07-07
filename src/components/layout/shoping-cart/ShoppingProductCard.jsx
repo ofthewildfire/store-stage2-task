@@ -1,22 +1,26 @@
-import React from "react";
-
 const ShoppingProductCard = () => {
   return (
-    <div className="flex items-center gap-5 p-5 bg-white">
-      <div className="flex items-center gap-2">
+    <div className="flex items-center justify-between gap-5 p-5 bg-white drop-shadow-lg">
+      <div className="flex items-center justify-between gap-2">
         <img src="redpot.png" alt="Red pot" width={137} height={105} />
         <div className="text">
-          <h4>Ceramic Set</h4>
-          <p>Recycled Ceramic made with natural benzonite clay</p>
+          <h4 className="text-[#1E1E1E] font-semibold">Ceramic Set</h4>
+          <p className="text-[#383838] text-[.75rem] font-medium">
+            Recycled Ceramic made with natural benzonite clay
+          </p>
         </div>
       </div>
       <div>
-        <h4>₦ 129,999.99</h4>
-        <div className="control">
-          <span>Quantity</span>
-          <span>-</span>
-          <span>1</span>
-          <span>+</span>
+        <h4 className="text-[#1E1E1E] font-bold text-[1.5rem]">₦ 129,999.99</h4>
+        <div className="control flex items-center gap-2">
+          <span className="text-[#969696] text-[.875rem]">Quantity</span>
+          <span className="bg-[#3A83A1] text-white h-[1.875rem] w-[1.875rem] flex items-center justify-center">
+            -
+          </span>
+          <span className="text-[#8F8F8F] text-[1.25rem] font-semibold">1</span>
+          <span className="text-[#3A83A1] bg-white border border-[#3A83A1] h-[1.875rem] w-[1.875rem] flex items-center justify-center">
+            +
+          </span>
         </div>
       </div>
     </div>
