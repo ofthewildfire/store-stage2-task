@@ -6,8 +6,8 @@ import CheckOutModal from "./CheckOutModal";
 const CheckoutPage = () => {
   const [paid, setPaid] = useState(false);
 
-  const toggleModal = () => {
-    alert("I was clicked");
+  const toggleModal = (e) => {
+    e.preventDefault();
     setPaid((prev) => !prev);
     return <CheckOutModal />;
   };
@@ -103,7 +103,7 @@ const CheckoutPage = () => {
             </button>
           </div>
         </form>
-        <form action="#" className="form-right bg-white p-8 ">
+        <form action="#" className="form-right bg-[#FAFAFA] p-8 ">
           <h3 className="text-[#383838] text-[2rem] font-semibold">
             Card Details
           </h3>
@@ -157,7 +157,7 @@ const CheckoutPage = () => {
             Check Out
           </button>
         </form>
-        <CheckOutModal />
+        {paid && <CheckOutModal />}
       </main>
       <Footer />
     </>
