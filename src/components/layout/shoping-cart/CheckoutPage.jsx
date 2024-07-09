@@ -15,7 +15,7 @@ const CheckoutPage = () => {
   return (
     <>
       <Header />
-      <main className="bg-[#f1f1f1] grid grid-cols-5 checkout-page-forms">
+      <main className="bg-[#f1f1f1] grid grid-cols-5 checkout-page-forms max-sm:flex max-sm:flex-col">
         <form
           action="#"
           className="checkout-form flex flex-col gap-5 form-left p-8">
@@ -48,11 +48,11 @@ const CheckoutPage = () => {
               <textarea
                 name="address"
                 id="address"
-                className="resize-none h-[7rem] indent-1 w-[30rem]"></textarea>
+                className="resize-none h-[7rem] indent-1 w-[30rem] max-sm:w-full max-md:w-full"></textarea>
             </label>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 max-sm:flex-col max-md:flex-col">
             <label htmlFor="state" className="flex items-start flex-col">
               State:
               <input

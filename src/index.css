@@ -118,7 +118,6 @@ main {
 }
 
 .modal-container {
-  height: 100vh;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.435);
   display: flex;
@@ -128,7 +127,6 @@ main {
 }
 
 .modal-container > div {
-  min-width: 40rem;
   max-width: 100%;
   height: auto;
 

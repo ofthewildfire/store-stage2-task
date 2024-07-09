@@ -1,7 +1,7 @@
 const CheckOutModal = () => {
   return (
-    <main className="modal-container">
-      <div className=" bg-white p-5">
+    <main className="modal-container max-h-screen min-h-screen">
+      <div className=" bg-white p-5 w-[40rem] max-sm:w-full max-md:w-full">
         <div className="img">
           <img src="credit-card-payment.png" alt="Checkout Modal" />
         </div>
