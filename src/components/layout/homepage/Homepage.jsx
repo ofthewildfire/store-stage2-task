@@ -39,7 +39,7 @@ const Homepage = () => {
     <>
       <Hero />
       <div className="p-2.5">
-        <div className="grid grid-cols-4 gap-5 w-2/3 items-center m-auto">
+        <div className="offers-homepage grid grid-cols-4 gap-5 w-2/3 items-center m-auto max-sm:grid-cols-2 max-sm:items-center">
           {dataElements}
         </div>
       </div>

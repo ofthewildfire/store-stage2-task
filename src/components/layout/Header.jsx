@@ -10,9 +10,6 @@ const Header = () => {
             className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
             <a href="#">Home</a>
           </Link>
-          {/* <li className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
-            <a href="#">Home</a>
-          </li> */}
           <li className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
             <a href="#">About Us</a>
           </li>
@@ -61,6 +58,7 @@ const Header = () => {
         <img src="login-icon.png" alt="" height={24} width={24} />
       </div>
     </header>
+    // Mobile Header
   );
 };
 
