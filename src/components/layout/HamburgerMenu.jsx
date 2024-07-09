@@ -11,7 +11,7 @@ const HamburgerMenu = () => {
   };
 
   return (
-    <div className="flex justify-between items-center w-full px-3">
+    <div className="flex justify-between items-center w-full px-3 max-md:hidden ">
       <div className="relative min-[767px]:hidden">
         <button
           className="text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900"
@@ -79,16 +79,20 @@ const HamburgerMenu = () => {
         </div>
       </div>
       {/* Icon */}
-      <Link to={"/cart"} className="flex gap-2 items-center">
+      <Link
+        to={"/cart"}
+        className="flex gap-2 items-center max-md:hidden border">
         <img
           src="cart.png"
           alt="Cart icon"
           height={24}
           width={24}
-          className="object-contain"
+          className="object-contain max-md:hidden "
         />
 
-        <span className="text-[#B5B5B5] text-[.75rem]">Cart(2)</span>
+        <span className="text-[#B5B5B5] text-[.75rem] max-md:hidden ">
+          Cart(2)
+        </span>
       </Link>
     </div>
   );

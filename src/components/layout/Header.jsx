@@ -81,7 +81,9 @@ const Header = () => {
           className="max-sm:hidden max-md:hidden"
         />
       </div>{" "}
-      <HamburgerMenu />
+      <div className="max-md:hidden">
+        <HamburgerMenu />
+      </div>
     </header>
     // Mobile Header
   );
