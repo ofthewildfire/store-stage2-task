@@ -1,9 +1,51 @@
-import React from 'react'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-const HamburgerMenu = () => {
-  return (
-    <div>HamburgerMenu</div>
-  )
-}
+// const HamburgerMenu = () => {
+//   const [menu, setMenu] = useState(true);
 
-export default HamburgerMenu
+//   const toggleMenu = () => {
+//     return setMenu((prev) => !prev);
+//   };
+//   return (
+//     <div className="">
+//       <div onClick={toggleMenu} className="toggle">
+//         <svg
+//           width="24"
+//           height="24"
+//           viewBox="0 0 24 24"
+//           fill="none"
+//           xmlns="http://www.w3.org/2000/svg">
+//           <path
+//             d="M4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7Z"
+//             fill="#B4B4B4"
+//           />
+//         </svg>
+//       </div>
+//       {toggleMenu && (
+//         <nav>
+//           <ul>
+//             <Link
+//               to={"/"}
+//               className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
+//               <a href="#">Home</a>
+//             </Link>
+//             <li className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
+//               <a href="#">About Us</a>
+//             </li>
+//             <Link
+//               to={"/products"}
+//               className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
+//               <a href="#">Our Products</a>
+//             </Link>
+//             <li className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
+//               <a href="#">Blog</a>
+//             </li>
+//           </ul>
+//         </nav>
+//       )}
+//     </div>
+//   );
+// };
+
+export default HamburgerMenu;
