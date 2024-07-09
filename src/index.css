@@ -19,15 +19,14 @@
 
 * {
   font-family: "Montserrat Variable", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
-  overflow: hidden;
   max-width: 1440px;
   width: 100%;
   body {
-    overflow: hidden;
+    overflow-x: hidden;
     max-width: 1440px;
     width: 100%;
   }
