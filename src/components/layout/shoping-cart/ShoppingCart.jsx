@@ -28,8 +28,8 @@ const ShoppingCart = () => {
         </svg>
         Back{" "}
       </span>
-      <main className="shopping-cart grid grid-cols-5 p-10 gap-4 bg-[#f1f1f1]">
-        <h2 className="text-[#383838] text-[2.25rem] font-bold flex gap-4 items-center shopping-cart-heading">
+      <main className="shopping-cart grid grid-cols-5 p-10 gap-4 bg-[#f1f1f1] max-sm:flex max-sm:flex-col max-md:flex max-md:flex-col">
+        <h2 className="text-[#383838] text-[2.25rem] font-bold flex gap-4 items-center shopping-cart-heading max-sm:flex">
           Shopping Cart(2)
           <span className="font-bold text-[1.25rem] text-[#3A83A1] order-summary-heading">
             Order History

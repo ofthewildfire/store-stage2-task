@@ -1,6 +1,6 @@
 const ShoppingProductCard = (props) => {
   return (
-    <div className="flex items-center justify-between gap-5 p-5 bg-white drop-shadow-lg">
+    <div className="flex items-center justify-between gap-5 p-5 bg-white drop-shadow-lg max-sm:flex">
       <div className="flex items-center justify-between gap-2">
         <img src={props.data.img} alt="Red pot" width={137} height={105} />
         <div className="text">

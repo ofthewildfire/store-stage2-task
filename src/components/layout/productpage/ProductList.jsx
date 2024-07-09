@@ -19,7 +19,7 @@ const ProductList = () => {
   return (
     <>
       <Header />
-      <div className="grid grid-cols-6 p-2 product-listing bg-[#F1F1F1]">
+      <div className="product-container grid grid-cols-6 p-2 product-listing bg-[#F1F1F1] max-w-full max-sm:flex max-md:flex max-sm:flex-col max-md:flex-col">
         <h2 className="text-[#383838] text-center font-bold text-[2.25rem]">
           Product List
         </h2>
@@ -28,7 +28,7 @@ const ProductList = () => {
           <MaterialSelection />
           <PriceRange />
         </aside>
-        <main className="grid grid-cols-2 gap-3 place-content-center">
+        <main className="product-lists grid grid-cols-2 gap-3 place-content-center max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center max-md:flex max-md:flex-col">
           {productElements}
         </main>
       </div>{" "}

@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductCategory = () => {
   return (
-    <div className=" w-[20rem]">
+    <div className=" w-[20rem] max-sm:hidden max-md:hidden">
       <h3 className="flex items-center gap-2 text-white font-bold text-[1.5rem] bg-[#3A83A1] p-2">
         Product Category{" "}
         <svg
