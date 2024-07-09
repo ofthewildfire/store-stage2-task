@@ -6,6 +6,8 @@ import PriceRange from "./PriceRange";
 import BestSellers from "../homepage/BestSellers";
 import productData from "./ProductData";
 import { Link } from "react-router-dom";
+import FeatureModal from "./FeatureModal";
+import { useState } from "react";
 
 const productElements = productData.map((el) => {
   return (
@@ -16,6 +18,11 @@ const productElements = productData.map((el) => {
 });
 
 const ProductList = () => {
+  const [toggle, setToggle] = useState(false);
+  const toggleFeatures = () => {
+    setToggle((prev) => !prev);
+    return <FeatureModal />;
+  };
   return (
     <>
       <Header />
@@ -28,6 +35,17 @@ const ProductList = () => {
           <MaterialSelection />
           <PriceRange />
         </aside>
+        <button
+          onClick={toggleFeatures}
+          className="bg-blue-300 p-3 max-lg:hidden max-xl:hidden max-2xl:hidden">
+          Product Features
+        </button>
+        <div
+          className={`${
+            toggle ? "fixed" : "hidden"
+          } inset-0 bg-white bg-opacity-95 z-20 flex flex-col items-center justify-center space-y-4`}>
+          <FeatureModal />
+        </div>
         <main className="product-lists grid grid-cols-2 gap-3 place-content-center max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center max-md:flex max-md:flex-col">
           {productElements}
         </main>

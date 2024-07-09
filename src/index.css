@@ -113,10 +113,6 @@ main {
   grid-column: 4/-1;
 }
 
-.hi {
-  border: 2px solid red;
-}
-
 .modal-container {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.435);

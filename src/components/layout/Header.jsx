@@ -91,6 +91,4 @@ const Header = () => {
 
 export default Header;
 
-/*
-<Link to={products}>Products</Link>
-*/
+
