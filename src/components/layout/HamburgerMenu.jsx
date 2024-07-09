@@ -1,51 +1,97 @@
-import React, { useState } from "react";
+// src/HamburgerMenu.js
+
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
-// const HamburgerMenu = () => {
-//   const [menu, setMenu] = useState(true);
+const HamburgerMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-//   const toggleMenu = () => {
-//     return setMenu((prev) => !prev);
-//   };
-//   return (
-//     <div className="">
-//       <div onClick={toggleMenu} className="toggle">
-//         <svg
-//           width="24"
-//           height="24"
-//           viewBox="0 0 24 24"
-//           fill="none"
-//           xmlns="http://www.w3.org/2000/svg">
-//           <path
-//             d="M4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7Z"
-//             fill="#B4B4B4"
-//           />
-//         </svg>
-//       </div>
-//       {toggleMenu && (
-//         <nav>
-//           <ul>
-//             <Link
-//               to={"/"}
-//               className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
-//               <a href="#">Home</a>
-//             </Link>
-//             <li className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
-//               <a href="#">About Us</a>
-//             </li>
-//             <Link
-//               to={"/products"}
-//               className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
-//               <a href="#">Our Products</a>
-//             </Link>
-//             <li className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
-//               <a href="#">Blog</a>
-//             </li>
-//           </ul>
-//         </nav>
-//       )}
-//     </div>
-//   );
-// };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="flex justify-between items-center w-full px-3">
+      <div className="relative min-[767px]:hidden">
+        <button
+          className="text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900"
+          onClick={toggleMenu}>
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
+            />
+          </svg>
+        </button>
+
+        {/* Full-screen overlay menu */}
+        <div
+          className={`${
+            isOpen ? "fixed" : "hidden"
+          } inset-0 bg-white bg-opacity-95 z-20 flex flex-col items-center justify-center space-y-4`}>
+          <button
+            className="absolute top-4 right-4 text-blue-500 hover:text-white focus:outline-none"
+            onClick={toggleMenu}>
+            <svg
+              className="h-8 w-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <ul className="*:text-[1.25rem] grid gap-14 font-bold *:text-[#3A83A1]">
+            <Link
+              to={"/"}
+              className="hover:border-b-2 hover:border-grey-900 hover:text-[#3A83A1]">
+              <a href="#">Home</a>
+            </Link>
+            <Link
+              to={"/about"}
+              className="hover:border-b-2 hover:border-grey-900 hover:text-[#3A83A1]">
+              <a href="#">About Us</a>
+            </Link>
+            <Link
+              to={"/products"}
+              className="hover:border-b-2 hover:border-grey-900 hover:text-[#3A83A1]">
+              <a href="#">Our Products</a>
+            </Link>
+            <Link to={"/blog"}>
+              {" "}
+              <li className="hover:border-b-2 hover:border-grey-900 hover:text-[#3A83A1]">
+                <a href="#">Blog</a>
+              </li>
+            </Link>
+          </ul>
+        </div>
+      </div>
+      {/* Icon */}
+      <Link to={"/cart"} className="flex gap-2 items-center">
+        <img
+          src="cart.png"
+          alt="Cart icon"
+          height={24}
+          width={24}
+          className="object-contain"
+        />
+
+        <span className="text-[#B5B5B5] text-[.75rem]">Cart(2)</span>
+      </Link>
+    </div>
+  );
+};
 
 export default HamburgerMenu;

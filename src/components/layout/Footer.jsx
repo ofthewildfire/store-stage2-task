@@ -1,9 +1,7 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <footer className="bg-[#383838] text-white">
-      <div className="top flex items-start justify-between px-5 py-5 max-sm:flex-col">
+      <div className="top flex items-start justify-between px-5 py-5 max-sm:flex-col max-md:flex-col">
         <div className="grid grid-cols-1 gap-12">
           <div className="company-info">
             <h2 className="text-[3rem] font-bold">Acookware</h2>

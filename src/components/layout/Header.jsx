@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import HamburgerMenu from "./HamburgerMenu";
 const Header = () => {
   return (
     <header className="flex items-center w-full justify-around py-4 bg-white  max-sm:flex max-sm:flex-col max-md:flex max-md:flex-col">
@@ -6,15 +7,17 @@ const Header = () => {
         Acookware
       </h1>
       <nav>
-        <ul className="flex items-center flex-wrap gap-8 *:font-semibold *:text-[#B5B5B5] max-sm:flex max-sm:flex-col max-md:flex max-md:flex-col">
+        <ul className="flex items-center flex-wrap gap-8 *:font-semibold *:text-[#B5B5B5] max-sm:hidden max-md:hidden">
           <Link
             to={"/"}
             className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
             <a href="#">Home</a>
           </Link>
-          <li className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
-            <a href="#">About Us</a>
-          </li>
+          <Link to={"/about"}>
+            <li className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
+              <a href="#">About Us</a>
+            </li>
+          </Link>
           <Link
             to={"/products"}
             className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
@@ -53,10 +56,12 @@ const Header = () => {
             alt="Cart icon"
             height={24}
             width={24}
-            className="object-contain"
+            className="object-contain max-sm:hidden max-md:hidden"
           />
 
-          <span className="text-[#B5B5B5] text-[.75rem]">Cart(2)</span>
+          <span className="text-[#B5B5B5] text-[.75rem] max-sm:hidden max-md:hidden">
+            Cart(2)
+          </span>
         </Link>
 
         {/* <img
@@ -68,8 +73,15 @@ const Header = () => {
         />
 
         <span className="text-[#B5B5B5] text-[.75rem]">Cart(2)</span> */}
-        <img src="login-icon.png" alt="" height={24} width={24} />
-      </div>
+        <img
+          src="login-icon.png"
+          alt=""
+          height={24}
+          width={24}
+          className="max-sm:hidden max-md:hidden"
+        />
+      </div>{" "}
+      <HamburgerMenu />
     </header>
     // Mobile Header
   );
