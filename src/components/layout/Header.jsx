@@ -6,7 +6,7 @@ const Header = () => {
         Acookware
       </h1>
       <nav>
-        <ul className="flex items-center flex-wrap gap-8 *:font-semibold *:text-[#B5B5B5] max-sm:flex max-sm:flex-col max-md:flex max-md:flex-col max-sm:hidden max-md:hidden">
+        <ul className="flex items-center flex-wrap gap-8 *:font-semibold *:text-[#B5B5B5] max-sm:flex max-sm:flex-col max-md:flex max-md:flex-col">
           <Link
             to={"/"}
             className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
