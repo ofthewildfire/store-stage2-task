@@ -20,9 +20,12 @@ const Header = () => {
             className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
             <a href="#">Our Products</a>
           </Link>
-          <li className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
-            <a href="#">Blog</a>
-          </li>
+          <Link to={"/blog"}>
+            {" "}
+            <li className="hover:border-b-2 hover:border-[#3A83A1] hover:text-[#3A83A1]">
+              <a href="#">Blog</a>
+            </li>
+          </Link>
         </ul>
       </nav>
       <form action="#" className="flex">
