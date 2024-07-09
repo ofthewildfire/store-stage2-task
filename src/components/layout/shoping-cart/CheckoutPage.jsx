@@ -157,7 +157,12 @@ const CheckoutPage = () => {
             Check Out
           </button>
         </form>
-        {paid && <CheckOutModal />}
+        <div
+          className={`${
+            paid ? "fixed" : "hidden"
+          } inset-0 bg-white bg-opacity-95 z-20 flex flex-col items-center justify-center space-y-4`}>
+          <CheckOutModal />
+        </div>
       </main>
       <Footer />
     </>

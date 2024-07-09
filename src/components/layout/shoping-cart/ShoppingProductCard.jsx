@@ -1,15 +1,15 @@
 const ShoppingProductCard = (props) => {
   return (
-    <div className="flex items-center justify-between gap-5 p-5 bg-white drop-shadow-lg max-sm:flex max-md:flex">
-      <div className="flex items-center justify-between gap-2 max-sm:flex">
+    <div className="flex items-center justify-between gap-5 p-5 bg-white drop-shadow-lg max-sm:grid max-md:grid">
+      <div className="flex items-center justify-between gap-2">
         <img
           src={props.data.img}
           alt="Red pot"
           width={137}
           height={105}
-          className="max-sm:h-10 max-sm:w-10"
+          // className="max-sm:h-10 max-sm:w-10"
         />
-        <div className="text">
+        <div className="text max-sm:flex max-sm:flex-col">
           <h4 className="text-[#1E1E1E] font-semibold max-sm:text-[.9rem]">
             {props.data.title}
           </h4>
@@ -18,7 +18,7 @@ const ShoppingProductCard = (props) => {
           </p>
         </div>
       </div>
-      <div className="grid gap-3">
+      <div className="grid gap-3 max-sm:col-span-1">
         <h4 className="text-[#1E1E1E] font-bold text-[1.5rem] max-sm:text-[.75rem]  max-md:text-[.75rem]">
           {props.data.price}
         </h4>
