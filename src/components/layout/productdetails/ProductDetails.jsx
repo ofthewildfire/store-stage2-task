@@ -11,7 +11,7 @@ const ProductDetails = () => {
         <h2 className="text-[#383838] text-center font-bold text-[2.25rem]">
           Product List
         </h2>
-        <div className="listing-details grid grid-cols-2 gap-3 py-9">
+        <div className="listing-details grid grid-cols-2 gap-3 py-9 max-sm:flex max-sm:flex-col">
           <div className="img">
             <img src="pot-details.png" alt="Red pot image" />
             <div className="previews grid grid-cols-3 py-2">

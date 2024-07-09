@@ -3,7 +3,9 @@ import ReviewsProductCard from "./ReviewsProductCard";
 
 const featuresElemements = features.map((el) => {
   return (
-    <li key={el.span} className="text-[#5B5B5B] text-[1.25rem] flex gap-2">
+    <li
+      key={el.span}
+      className="text-[#5B5B5B] text-[1.25rem] flex gap-2 max-sm:flex-col">
       <span className="text-[#5B5B5B] font-medium text-[1.25rem]">
         {el.span}
       </span>
@@ -14,14 +16,16 @@ const featuresElemements = features.map((el) => {
 
 const Description = () => {
   return (
-    <div className="grid gap-5">
+    <div className="grid gap-5 ">
       <div className="flex gap-3 flex-col items-start justify-around mt-5">
         <h3 className="product-details-buy-now-btn">Description</h3>
       </div>
       <h4 className="text-[#5B5B5B] font-semibold text-[1.25rem]">
         Key Features:
       </h4>
-      <ul className="features-list grid gap-4">{featuresElemements}</ul>
+      <ul className="features-list grid gap-4 max-sm:flex max-sm:flex-col">
+        {featuresElemements}
+      </ul>
       <h4 className="text-[#5B5B5B] font-semibold text-[1.25rem]">
         Why Choose Our Ceramic Cooking Pot?
       </h4>

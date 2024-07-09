@@ -4,7 +4,7 @@ import HeroOfferBlock from "./HeroOfferBlock";
 const Hero = () => {
   return (
     <section id="hero relative">
-      <div className="bg-[url(image.png)] bg-cover flex items-center justify-center h-screen text-center text-white gap-4 flex-col">
+      <div className="bg-[url(./image.png)] bg-cover flex items-center justify-center h-screen text-center text-white gap-4 flex-col">
         <h1 className="text-[3rem] font-bold w-[30rem] text-center max-sm:hidden">
           Lets Help you Spice up your Kitchen
         </h1>
