@@ -19,7 +19,7 @@ const WhyChoseUs = () => {
       </section>
       <SectionOne />
       <SectionTwo />
-      <p className="text-[#5B5B5B] text-[1.25rem] text-center py-10">
+      <p className="text-[#5B5B5B] text-[1.25rem] text-center py-10 max-sm:hidden">
         When you choose{" "}
         <span className="text-[#3A83A1] font-medium">Acookware</span>, you're
         not just choosing quality cookware; <br />

@@ -2,7 +2,7 @@ import React from "react";
 
 const SectionOne = () => {
   return (
-    <div className="grid grid-cols-2 gap-5 place-content-center py-8">
+    <div className="grid grid-cols-2 gap-5 place-content-center py-8 max-sm:grid-cols-1">
       <div className="image-container flex items-center justify-center relative">
         <img
           src="whychooseus/redwithbread.png"
@@ -13,7 +13,7 @@ const SectionOne = () => {
         <img
           src="whychooseus/pastapot.png"
           alt="Pasta pog, some pasta and other things"
-          className="absolute right-0 bottom-0"
+          className="absolute right-0 bottom-0 max-sm:hidden"
           // width={371}
           // height={392}
         />

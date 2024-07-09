@@ -52,14 +52,14 @@ const Homepage = () => {
           See All
         </span>
       </section>
-      <div className="bestselling-sectiong flex items-center justify-center gap-3 py-5">
+      <div className="bestselling-sectiong flex items-center justify-center gap-3 py-5 max-sm:flex-col">
         {bestSellingItems}
       </div>
       <section className="reviews">
         <h2 className="text-[#383838] font-bold text-[2rem] text-center">
           Reviews
         </h2>
-        <div className="reviews flex items-center justify-center gap-3 py-[10%]">
+        <div className="reviews flex items-center justify-center gap-3 py-[10%] max-sm:flex-col">
           {reviewElements}
         </div>
       </section>
@@ -67,7 +67,9 @@ const Homepage = () => {
         <h2 className="text-[#383838] font-bold text-[2rem] text-center">
           Our Blog
         </h2>
-        <div className="flex gap-2 justify-end">{blogElements}</div>
+        <div className="flex gap-2 justify-end max-sm:flex-col max-sm:justify-center">
+          {blogElements}
+        </div>
       </section>
       <NewsletterSignup />
     </>

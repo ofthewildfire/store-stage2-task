@@ -5,9 +5,14 @@ import MaterialSelection from "./MaterialSelection";
 import PriceRange from "./PriceRange";
 import BestSellers from "../homepage/BestSellers";
 import productData from "./ProductData";
+import { Link } from "react-router-dom";
 
 const productElements = productData.map((el) => {
-  return <BestSellers key={el.title} data={el} />;
+  return (
+    <Link key={el.title} to={"/details"}>
+      <BestSellers data={el} />
+    </Link>
+  );
 });
 
 const ProductList = () => {

@@ -2,7 +2,7 @@ import React from "react";
 
 const Reviews = (data) => {
   return (
-    <div className="bg-white p-5 max-w-fit text-center relative">
+    <div className="bg-white p-5 max-w-fit text-center relative max-sm:hidden max-sm:first-of-type:block max-sm:mt-14">
       <img
         src={data.data.avatar}
         alt="Reviewer avatar"

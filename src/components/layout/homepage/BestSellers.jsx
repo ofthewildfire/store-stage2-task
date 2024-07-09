@@ -3,7 +3,7 @@ import React from "react";
 const BestSellers = (props) => {
   console.log(props);
   return (
-    <div className="bg-white p-5 w-[22.5rem] grid gap-3">
+    <div className="bg-white p-5 w-[22.5rem] grid gap-3 max-sm:hidden max-sm:first-of-type:block">
       <img src={props.data.img} alt="Red Pot" />
       <div className="flex justify-between">
         <div className="title flex gap-1 items-center ">

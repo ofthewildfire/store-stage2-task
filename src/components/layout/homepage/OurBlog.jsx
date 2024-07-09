@@ -2,7 +2,7 @@ import React from "react";
 
 const OurBlog = (props) => {
   return (
-    <div className="grid blog-card place-content-center">
+    <div className="grid blog-card place-content-center max-sm:bg-red-300">
       <div className="image">
         <img src={props.data.img} alt="" />
       </div>

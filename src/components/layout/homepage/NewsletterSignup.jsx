@@ -2,8 +2,8 @@ import React from "react";
 
 const NewsletterSignup = () => {
   return (
-    <div className="bg-white grid grid-cols-2">
-      <div className="text-signup grid place-content-center gap-3">
+    <div className="bg-white grid grid-cols-2 max-sm:grid-cols-1">
+      <div className="text-signup grid place-content-center gap-3 max-sm:p-5">
         <h2 className="font-semibold text-[2rem] text-[#1E1E1E]">
           Sign Up for Our Newsletter
         </h2>
