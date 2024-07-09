@@ -81,7 +81,7 @@ const Header = () => {
           className="max-sm:hidden max-md:hidden"
         />
       </div>{" "}
-      <div className="max-md:hidden">
+      <div>
         <HamburgerMenu />
       </div>
     </header>
